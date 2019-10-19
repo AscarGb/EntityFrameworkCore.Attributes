@@ -1,7 +1,25 @@
 ## Usage
+
 ```
-protected override void OnModelCreating(DbModelBuilder modelBuilder)
+public class UsersData
 {
-  modelBuilder.BindCompositeKey();
+  [CompositeKey]    
+  public Guid UserId{ get; set; }
+
+  [CompositeKey]
+  [Required]
+  public string DataId { get; set; }
+}
+```
+
+```
+public class MyDbContext : DbContext
+{
+  ...  
+  protected override void OnModelCreating(DbModelBuilder modelBuilder)
+  {
+    ...
+    modelBuilder.BindCompositeKey();
+  }  
 }
 ```

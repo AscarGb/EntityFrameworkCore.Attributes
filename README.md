@@ -1,7 +1,7 @@
 # EntityFrameworkCore.Attributes
 Entity framework core composite primary key attribute
 
-[![NuGet](https://img.shields.io/badge/nuget-1.0.0-blue)](https://www.nuget.org/packages/EntityFrameworkCore.Attributes/)
+[![NuGet](https://img.shields.io/badge/nuget-1.0.1-blue)](https://www.nuget.org/packages/EntityFrameworkCore.Attributes/)
 
 ## Usage
 

@@ -21,7 +21,7 @@ public class UsersData
 public class MyDbContext : DbContext
 {
   ...  
-  protected override void OnModelCreating(DbModelBuilder modelBuilder)
+  protected override void OnModelCreating(ModelBuilder modelBuilder)
   {
     ...
     modelBuilder.BindCompositeKey();

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EntityFrameworkCore.Example.Data.Migrations.DbContextMigration
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20191019163228_DbContextMigration")]
+    [Migration("20191129144328_DbContextMigration")]
     partial class DbContextMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

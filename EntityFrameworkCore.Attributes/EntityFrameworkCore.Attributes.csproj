@@ -1,7 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Copyright>AscarGb</Copyright>
+    <PackageProjectUrl>https://github.com/AscarGb/EntityFrameworkCore.Attributes</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AscarGb/EntityFrameworkCore.Attributes</RepositoryUrl>
+    <PackageLicenseUrl>https://choosealicense.com/licenses/mit/</PackageLicenseUrl>
+    <Description>Entity framework core composite primary key attribute</Description>
+    <PackageTags>c#, Entity framework core, composite primary key</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>

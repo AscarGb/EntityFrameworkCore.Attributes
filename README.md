@@ -1,7 +1,30 @@
+# EntityFrameworkCore.Attributes
+Entity framework core composite primary key attribute
+
+[![NuGet](https://img.shields.io/badge/nuget-1.0.0-blue)](https://www.nuget.org/packages/EntityFrameworkCore.Attributes/)
+
 ## Usage
+
 ```
-protected override void OnModelCreating(DbModelBuilder modelBuilder)
+public class UsersData
 {
-  modelBuilder.BindCompositeKey();
+  [CompositeKey]    
+  public Guid UserId{ get; set; }
+
+  [CompositeKey]
+  [Required]
+  public string DataId { get; set; }
+}
+```
+
+```
+public class MyDbContext : DbContext
+{
+  ...  
+  protected override void OnModelCreating(ModelBuilder modelBuilder)
+  {
+    ...
+    modelBuilder.BindCompositeKey();
+  }  
 }
 ```
